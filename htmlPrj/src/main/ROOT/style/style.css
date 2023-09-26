@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/*
+	선택자(selector)
+*/
+body{/*태그선택자*/
+	/*background-color: #ffffff;*/
+	background-color:rgb(255,255,255);
+}
+
+form > section{
+	display: flex;
+	font-size:0.9rem;
+}
+form>section>article:first-child{
+	width:100px;
+	text-align:right;
+	padding-right:10px;
+	border:1px solid #000000;
+	border-bottom:0;
+	border-right:0;
+	/*background-color:#eeeeee;*/
+	background-color:rgba(0,0,0, 0.5);
+	cursor:pointer;
+}
+form>section>article:first-child:hover{
+	background-color:#dcdcdc;
+	color:darkorchid;
+	text-decoration:underline;
+}
+form>section:last-child>article:first-child{
+	border-bottom:1px solid #000000;
+}
+form>section>article:last-child>input,
+form>section:last-child>article:last-child>select{
+	all:unset;
+}
+form>section>article:last-child{
+	border:1px solid #000000;
+	border-bottom:0;
+	width:300px;
+	padding-left:10px;
+}
+form>section:last-child>article:last-child{
+	border-bottom:1px solid #000000;
+}
+/*form article*/
+form>section>article{
+	padding-top:2px;
+	padding-bottom:2px;
+}

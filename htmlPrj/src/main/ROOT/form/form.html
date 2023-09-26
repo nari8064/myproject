@@ -4,21 +4,42 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Insert title here</title>
+		<link href="../style/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<section>
 			<form>
-				<input type="text" name="artistname" placeholder="가수이름" maxlength="5">
-				<input type="text" name="sex" placeholder="성별" maxlength="1">
-				<input type="text" name="agency" placeholder="소속사" maxlenght="10">
-				<input type="date" name="birthday" placeholder="생년월일">
-				<input typr="text" name="groupname" placeholder="그룹명" maxlenght="20">
-				<select>
-					<option>크로플</option>
-					<option>초코라떼</option>
-					<option>소고기</option>
-					<option>위스키</option>
-				</select>
+				<section>
+					<article>이름</article>
+					<article><input class="firstInput" id="finput" type="text" name="artistName" placeholder="가수이름" maxlength="5"></article>	
+				</section>
+				<section>
+					<article>성별</article>
+					<article><input class="firstInput" type="text" name="sex" placeholder="성별" maxlength="1"></article>	
+				</section>
+				<section>
+					<article>소속사</article>
+					<article><input class="firstInput" type="text" name="agency" placeholder="소속사" maxlenght="10"></article>
+				</section>
+				<section>
+					<article>생년월일</article>
+					<article><input class="firstInput" type="date" name="birthday" placeholder="생년월일"></article>	
+				</section>
+				<section>
+					<article>그룹명</article>
+					<article><input class="firstInput" typr="text" name="groupName" placeholder="그룹명" maxlenght="20"></article>	
+				</section>
+				<section>
+					<article>좋아하는것</article>
+					<article>
+						<select>
+							<option>크로플</option>
+							<option>초코라떼</option>
+							<option>소고기</option>
+							<option>위스키</option>
+						</select>
+					</article>
+				</section>
 			</form>
 		</section>
 	</body>
